@@ -19,10 +19,10 @@
       <header class="navbar bg-transparent d-lg-block d-none">
         <div class="container d-flex justify-content-between">
           <a class="navbar-brand" href="#">
-            <img src="/resources/images/logo_pemerintah.png" alt="Bootstrap" width="150" />
+            <img src="/resources/images/logo_pemerintah.png" alt="Bootstrap" width="150" loading="lazy" />
           </a>
           <a class="navbar-brand" href="#">
-            <img src="/resources/images/logo.svg" alt="Bootstrap" width="200" />
+            <img src="/resources/images/logo.svg" alt="Bootstrap" width="200" loading="lazy" />
           </a>
           <button type="button" class="btn btn-outline-primary px-5 py-3 rounded-3 poppins-semibold">Login</button>
         </div>
@@ -37,7 +37,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand d-lg-none d-block" href="#">
-            <img src="/resources/images/logo.svg" alt="Bootstrap" width="200" />
+            <img src="/resources/images/logo.svg" alt="Bootstrap" width="200" loading="lazy" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -77,21 +77,147 @@
 
     <!-- JUMBOTRON START -->
     <section id="jumbotron">
-      <div class="bg-gray">
+      <div class="bg-transparent">
         <div class="container py-5">
-          <!-- <div
-            class="rounded-5 w-100 vh-100 position relative"
-            style="background-image: url(/resources/images/bg-hero.png); background-position: center; background-repeat: no-repeat; background-size: cover; max-width: max-content"
-          ></div> -->
-          <img src="/resources/images/bg-hero.png" class="w-100" alt="" style="background-position: center; background-repeat: no-repeat; background-size: cover" />
+          <img src="/resources/images/bg-hero.png" class="w-100 h-100" alt="Jumbotron Image" style="background-position: center; background-repeat: no-repeat; background-size: cover" loading="lazy" />
         </div>
       </div>
     </section>
     <!-- JUMBOTRON END -->
 
-    <div class="mt-5">
-      <h1>Hellow asd</h1>
-    </div>
+    <!-- ABOUT START -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 mb-4">
+            <h4 class="poppins-bold text-primary mb-4">APA ITU SIDARASALIMBA?</h4>
+            <p class="poppins-regular text-secondary pe-lg-5" style="text-align: justify; line-height: 2.5rem">
+              Sidarasalimba merupakan aplikasi web berbasis spasial pemetaan. Berisi informasi terbaru terkait sebaran sanitasi Limbah Dikabupaten Sanggau. Serta menyajikan data-data sanitasi dan air
+              limbah terkait kondisi eksisting yang akan dibangun, dan rekomendasi usulan pembangunan. Semoga dengan adanya SIDARASALIMBA dapat membantu Pemerintah Kabupaten Sanggau dalam merencanakan
+              pembangunan kedepannya yang dilakukan oleh Dinas Perumahan, Cipta Karya, Tata Ruang Dan Pertanahan Kabupaten Sanggau.
+            </p>
+          </div>
+          <div class="col-lg-6 col-12 mb-4">
+            <!-- Sanitasi -->
+            <div class="p-4 shadow rounded-4 mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-body-tertiary p-3">
+                  <iconify-icon icon="ep:map-location" width="2rem" height="1.5rem" class="text-success"></iconify-icon>
+                </div>
+                <div class="d-block">
+                  <h5 class="poppins-semibold">Sanitasi</h5>
+                  <span class="text-secondary">Sebaran eksisting sanitasi di kabupaten sanggau.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Informasi -->
+            <div class="p-4 shadow rounded-4 mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-body-tertiary p-3">
+                  <iconify-icon icon="mdi:information-outline" width="2rem" height="1.5rem" class="text-success"></iconify-icon>
+                </div>
+                <div class="d-block">
+                  <h5 class="poppins-semibold">Informasi</h5>
+                  <span class="text-secondary">Informasi data terbaru, terkait sanitasi</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Spasial -->
+            <div class="p-4 shadow rounded-4 mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-body-tertiary p-3">
+                  <iconify-icon icon="icon-park-outline:system" width="2rem" height="1.5rem" class="text-success"></iconify-icon>
+                </div>
+                <div class="d-block">
+                  <h5 class="poppins-semibold">Spasial</h5>
+                  <span class="text-secondary">Sistem Informasi berbasis spasial pemetaan.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grafik -->
+            <div class="p-4 shadow rounded-4 mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-body-tertiary p-3">
+                  <iconify-icon icon="clarity:curve-chart-line" width="2rem" height="1.5rem" class="text-success"></iconify-icon>
+                </div>
+                <div class="d-block">
+                  <h5 class="poppins-semibold">Grafik</h5>
+                  <span class="text-secondary">Menampilkan data-data dengan grafiK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT END -->
+
+    <!-- DATA REKAPAN START -->
+    <section id="dataRekapan">
+      <div class="container my-5">
+        <h4 class="poppins-bold text-primary mb-4">DATA REKAPAN SIDARASALIMBA?</h4>
+        <div class="row">
+          <!-- Air Limbah Domestik -->
+          <div class="col-lg-4 col-12 mb-3">
+            <div class="card border-0 p-4 shadow rounded-4">
+              <div class="rounded-2 bg-info p-2 mb-5" style="width: 3rem; height: 3rem">
+                <iconify-icon icon="material-symbols:water-drop" width="100%" height="100%" class="text-white"></iconify-icon>
+              </div>
+              <h6 class="poppins-regular text-secondary mb-2">Air Limbah Domestik</h6>
+              <h2 class="poppins-semibold">126 Sebaran</h2>
+
+              <div class="border border-1 text-secondary w-25 my-4"></div>
+
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-secondary fs-6 poppins-medium">Lihat Detail</span>
+                <iconify-icon icon="bx:right-top-arrow-circle" width="2rem" height="2rem" class="text-success"></iconify-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- Persampahan -->
+          <div class="col-lg-4 col-12 mb-3">
+            <div class="card border-0 p-4 shadow rounded-4">
+              <div class="rounded-2 bg-warning p-2 mb-5" style="width: 3rem; height: 3rem">
+                <iconify-icon icon="mdi:recycle" width="100%" height="100%" class="text-white"></iconify-icon>
+              </div>
+              <h6 class="poppins-regular text-secondary mb-2">Persampahan</h6>
+              <h2 class="poppins-semibold">137 Sebaran</h2>
+
+              <div class="border border-1 text-secondary w-25 my-4"></div>
+
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-secondary fs-6 poppins-medium">Lihat Detail</span>
+                <iconify-icon icon="bx:right-top-arrow-circle" width="2rem" height="2rem" class="text-success"></iconify-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drainase -->
+          <div class="col-lg-4 col-12 mb-3">
+            <div class="card border-0 p-4 shadow rounded-4">
+              <div class="rounded-2 bg-success p-2 mb-5" style="width: 3rem; height: 3rem">
+                <iconify-icon icon="mdi:recycle" width="100%" height="100%" class="text-white"></iconify-icon>
+              </div>
+              <h6 class="poppins-regular text-secondary mb-2">Drainase</h6>
+              <h2 class="poppins-semibold">96 Sebaran</h2>
+
+              <div class="border border-1 text-secondary w-25 my-4"></div>
+
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-secondary fs-6 poppins-medium">Lihat Detail</span>
+                <iconify-icon icon="bx:right-top-arrow-circle" width="2rem" height="2rem" class="text-success"></iconify-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA REKAPAN END -->
 
     <!-- Script Bootstrap -->
     <script
