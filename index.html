@@ -6,15 +6,75 @@
     <title>Beranda</title>
 
     <!-- Css -->
+    <link rel="stylesheet" href="/resources/css/style.css" />
     <link rel="stylesheet" href="/resources/css/main.css" />
-    <link rel="stylesheet" href="/resources/css/main.min.css" />
     <link rel="stylesheet" href="/resources/css/font.css" />
 
     <!-- Iconify -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </head>
   <body>
-    <h1 class="poppins-medium text-primary">Hello World</h1>
+    <!-- HEADER START -->
+    <section id="header">
+      <nav class="navbar bg-transparent d-lg-block d-none">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="/resources/images/logo_pemerintah.png" alt="Bootstrap" width="150" />
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="/resources/images/logo.svg" alt="Bootstrap" width="200" />
+          </a>
+          <button type="button" class="btn btn-outline-primary px-5 py-3 rounded-3 poppins-semibold">Login</button>
+        </div>
+      </nav>
+    </section>
+    <!-- HEADER STOP -->
+
+    <hr class="text-secondary d-lg-block d-none" />
+
+    <!-- NAVBAR START -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+          <a class="navbar-brand d-lg-none d-block" href="#">
+            <img src="/resources/images/logo.svg" alt="Bootstrap" width="200" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item poppins-bold border border-primary border-top-0 border-start-0 border-end-0 border-3">
+                <a class="nav-link text-primary" href="#">BERANDA</a>
+              </li>
+              <li class="nav-item poppins-medium">
+                <a class="nav-link text-secondary" href="#">SEBARAN</a>
+              </li>
+              <li class="nav-item poppins-medium">
+                <a class="nav-link text-secondary" href="#">DESA</a>
+              </li>
+              <li class="nav-item poppins-medium">
+                <a class="nav-link text-secondary" href="#">GRAFIK</a>
+              </li>
+              <li class="nav-item poppins-medium">
+                <a class="nav-link text-secondary" href="#">STRUKTUR ORGANISASI</a>
+              </li>
+              <li class="nav-item poppins-medium">
+                <a class="nav-link text-secondary" href="#">REFERENSI HUKUM</a>
+              </li>
+              <li class="nav-item poppins-medium">
+                <a class="nav-link text-secondary" href="#">PENGADUAN</a>
+              </li>
+              <li class="nav-item poppins-medium d-lg-none d-block">
+                <button type="button" class="btn btn-outline-primary px-5 py-3 w-100 rounded-3 poppins-semibold">Login</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- NAVBAR STOP -->
+
     <!-- Script Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
